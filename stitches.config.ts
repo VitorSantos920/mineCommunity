@@ -13,6 +13,17 @@ export const stitches = createStitches({
     fontSizes: {
       defaultSize: '1rem ',
     },
+
+    space: {
+      defaultSpace: '1rem',
+    },
+
+    fontWeights: {
+      nm: 400,
+      md: 500,
+      exb: 600,
+      b: 700,
+    },
   },
 
   media: {},
@@ -26,7 +37,7 @@ const injectGlobalStyles = stitches.globalCss({
   },
 
   body: {
-    backgroundImage: 'url("mineBanner.png")',
+    background: 'url("mineBanner.png") no-repeat center center',
     minHeight: '100vh',
     backgroundSize: 'cover',
     fontFamily: '$mainFont',
@@ -41,6 +52,14 @@ const injectGlobalStyles = stitches.globalCss({
     fontFamily: 'inherit',
     color: 'inherit',
     textDecoration: 'none ',
+  },
+
+  '.flex': {
+    display: 'flex',
+  },
+
+  ul: {
+    listStyle: 'none',
   },
 });
 
