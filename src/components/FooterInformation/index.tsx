@@ -1,5 +1,5 @@
 import { ElementType } from 'react';
-
+import { DivContainer } from './style';
 interface FooterInformationProps {
   icon: ElementType;
   text: string;
@@ -10,9 +10,9 @@ export function FooterInformation({
   text,
 }: FooterInformationProps) {
   return (
-    <div className="footer__information">
-      <Icon size={28} weight="bold" />
+    <DivContainer className="footer__information">
+      <Icon className="" size={28} weight="bold" />
       <p className="footer__information-text">{text}</p>
-    </div>
+    </DivContainer>
   );
 }
