@@ -10,4 +10,5 @@ export const MainContainer = styled('main', {
   maxWidth: 500,
   margin: '0 auto',
   textAlign: 'center',
+  padding: 'calc($defaultSpace * 2) 36px',
 });
