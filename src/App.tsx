@@ -37,6 +37,7 @@ function App() {
           </Form.Fieldset>
           <Form.Button text="Entrar na conta" />
         </Form.Root>
+        <a href="#">Esqueceu a senha?</a>
       </MainContainer>
       <Footer />
     </div>

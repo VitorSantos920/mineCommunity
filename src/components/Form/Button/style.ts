@@ -15,6 +15,7 @@ export const ButtonContainer = styled('button', {
   boxShadow: '0 3px 1px 0 #fff',
   cursor: 'pointer',
   transition: '1s',
+  marginBottom: 'calc($defaultSpace * 1.75)',
 
   '&:hover': {
     textDecoration: 'underline',

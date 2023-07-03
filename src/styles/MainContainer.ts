@@ -8,7 +8,15 @@ export const MainContainer = styled('main', {
   background: 'rgba(38, 38, 38, 0.80)',
   backdropFilter: 'blur(2.5px)',
   maxWidth: 500,
-  margin: '0 auto',
+  margin: 'calc($defaultSpace * 2.5) auto',
   textAlign: 'center',
   padding: 'calc($defaultSpace * 2) 36px',
+
+  '> a': {
+    color: '$brandColor',
+
+    '&:hover': {
+      textDecoration: 'underline',
+    },
+  },
 });

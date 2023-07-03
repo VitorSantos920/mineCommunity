@@ -3,7 +3,7 @@ import { stitches } from '../../../../stitches.config';
 const { styled } = stitches;
 
 export const InputContainer = styled('input', {
-  padding: '.4rem .875rem',
+  padding: '.9rem .875rem',
   outline: 'none',
   borderRadius: 3,
   border: '1px solid #414141',
