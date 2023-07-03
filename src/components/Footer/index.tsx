@@ -10,7 +10,7 @@ import { FooterContainer } from './style';
 
 export function Footer() {
   return (
-    <FooterContainer className="flex">
+    <FooterContainer className="footer flex">
       <FooterInformation icon={Power} text="Jogue também offline" />
       <FooterInformation icon={User} text="67 jogadores" />
       <FooterInformation
