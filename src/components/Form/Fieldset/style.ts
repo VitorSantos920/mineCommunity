@@ -8,7 +8,7 @@ export const FieldsetContainer = styled('fieldset', {
 
   '&.form__checkbox': {
     alignItems: 'center',
-    gap: 11,
+    gap: '.75rem',
 
     '& label, & input': { cursor: 'pointer' },
   },

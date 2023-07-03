@@ -1,8 +1,8 @@
 import { LabelContainer } from './style';
 
 interface FormLabelProps {
-  text: string;
   labelFor: string;
+  text: string;
 }
 
 export function FormLabel({ text, labelFor }: FormLabelProps) {

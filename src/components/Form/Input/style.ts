@@ -3,21 +3,19 @@ import { stitches } from '../../../../stitches.config';
 const { styled } = stitches;
 
 export const InputContainer = styled('input', {
-  padding: '.9rem .875rem',
-  outline: 'none',
-  borderRadius: 3,
-  border: '1px solid #414141',
-  background: '$inputBg',
   backdropFilter: 'blur(5px)',
+  background: '$inputBg',
+  border: '1px solid #414141',
+  borderRadius: 3,
+  outline: 'none',
+  padding: '.9rem .875rem',
 
   '&:not(input[type=checkbox])': {
-    width: '100%',
     marginTop: 'calc($defaultSpace * 0.5)',
+    width: '100%',
   },
 
-  '&, &::placeholder': {
-    color: '#BAACAC',
-  },
+  '&, &::placeholder': { color: '#BAACAC' },
 
   '&[type="checkbox"]': {
     appearance: 'none',
@@ -27,19 +25,17 @@ export const InputContainer = styled('input', {
     position: 'relative',
 
     '&::before': {
-      content: '',
-      position: 'absolute',
-      width: 20,
-      height: 20,
       backgroundColor: '$brandColor',
+      content: '',
+      height: 20,
       left: '50%',
+      position: 'absolute',
       top: '50%',
       transform: 'translate(-50%, -50%) scale(0)',
       transition: '100ms',
+      width: 20,
     },
 
-    '&:checked::before': {
-      transform: 'translate(-50%, -50%) scale(1)',
-    },
+    '&:checked::before': { transform: 'translate(-50%, -50%) scale(1)' },
   },
 });

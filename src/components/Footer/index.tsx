@@ -1,4 +1,5 @@
 import { FooterInformation } from '../FooterInformation';
+import { FooterContainer } from './style';
 import {
   Power,
   User,
@@ -6,7 +7,6 @@ import {
   Vibrate,
   Baby,
 } from '@phosphor-icons/react';
-import { FooterContainer } from './style';
 
 export function Footer() {
   return (

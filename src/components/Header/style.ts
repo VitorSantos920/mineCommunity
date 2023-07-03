@@ -3,30 +3,30 @@ import { stitches } from '../../../stitches.config';
 const { styled } = stitches;
 
 export const HeaderContainer = styled('header', {
-  width: '100%',
-  flexDirection: 'column',
-  justifyContent: 'center',
   alignItems: 'center',
   background:
     'linear-gradient(to bottom, #121212 0%, rgba(18, 18, 18, 0.70) 50%, rgba(18, 18, 18, 0.00) 100%)',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  width: '100%',
 
   '.header__brand': {
     alignItems: 'center',
-    margin: '.975rem 0',
     gap: 'calc($defaultSpace * 0.5)',
+    margin: '.975rem 0',
 
     '&-text': {
-      textTransform: 'uppercase',
-      fontWeight: '$exb',
       fontSize: 'calc($defaultSize * 2)',
+      fontWeight: '$exb',
+      textTransform: 'uppercase',
     },
   },
 
   '.header__menu-items li': {
-    padding: '.5rem 3vw',
-    fontWeight: '$b',
-    textTransform: 'uppercase',
     borderRadius: 6,
+    fontWeight: '$b',
+    padding: '.5rem 3vw',
+    textTransform: 'uppercase',
 
     '&:first-child': {
       background: 'rgba(0, 0, 0, .3)',
@@ -37,19 +37,17 @@ export const HeaderContainer = styled('header', {
       position: 'relative',
 
       '&::before': {
-        content: '',
-        position: 'absolute',
         bottom: 0,
-        left: 0,
-        height: 2,
         backgroundColor: '#fff',
-        width: 0,
+        content: '',
+        height: 2,
+        left: 0,
+        position: 'absolute',
         transition: 'width 1s',
+        width: 0,
       },
 
-      '&:hover::before': {
-        width: '100%',
-      },
+      '&:hover::before': { width: '100%' },
     },
   },
 });

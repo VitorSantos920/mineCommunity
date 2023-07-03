@@ -11,7 +11,7 @@ export function FooterInformation({
 }: FooterInformationProps) {
   return (
     <DivContainer className="footer__information">
-      <Icon className="" size={28} weight="bold" />
+      <Icon className="footer__icon" size={28} weight="bold" />
       <p className="footer__information-text">{text}</p>
     </DivContainer>
   );
