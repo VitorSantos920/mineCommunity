@@ -4,6 +4,7 @@ export const stitches = createStitches({
   theme: {
     colors: {
       brandColor: '#33E29A',
+      inputBg: '#262626',
     },
 
     fonts: {
