@@ -2,7 +2,7 @@ import { InputContainer } from './style';
 
 interface FormInputProps {
   inputType: string;
-  inputPlaceholder: string;
+  inputPlaceholder?: string;
   inputInfo: string;
   isRequired?: boolean;
 }
