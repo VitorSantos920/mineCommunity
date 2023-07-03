@@ -1,8 +1,10 @@
+import { LabelContainer } from './style';
+
 interface FormLabelProps {
   text: string;
   labelFor: string;
 }
 
 export function FormLabel({ text, labelFor }: FormLabelProps) {
-  return <label htmlFor={labelFor}>{text}</label>;
+  return <LabelContainer htmlFor={labelFor}>{text}</LabelContainer>;
 }

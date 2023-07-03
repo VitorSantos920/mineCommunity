@@ -1,3 +1,5 @@
+import { InputContainer } from './style';
+
 interface FormInputProps {
   inputType: string;
   inputPlaceholder: string;
@@ -12,7 +14,7 @@ export function FormInput({
   isRequired = false,
 }: FormInputProps) {
   return (
-    <input
+    <InputContainer
       type={inputType}
       name={inputInfo}
       id={inputInfo}
