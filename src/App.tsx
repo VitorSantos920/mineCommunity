@@ -10,7 +10,7 @@ function App() {
       <MainContainer className="main">
         <img src="brand.svg" alt="Mine Brand" />
         <Form.Root>
-          <Form.Fieldset>
+          <Form.Fieldset className="form__email">
             <Form.Label labelFor="email" text="E-mail" />
             <Form.Input
               inputType="email"
@@ -19,15 +19,23 @@ function App() {
               inputPlaceholder="vitordev@gmail.com"
             />
           </Form.Fieldset>
-          <Form.Fieldset>
+          <Form.Fieldset className="form__password">
             <Form.Label labelFor="password" text="Senha" />
             <Form.Input
               inputType="password"
               isRequired
               inputInfo="password"
-              inputPlaceholder="****"
+              inputPlaceholder="***************"
             />
           </Form.Fieldset>
+          <Form.Fieldset className="form__checkbox flex">
+            <Form.Input inputType="checkbox" inputInfo="checkbox-remember" />
+            <Form.Label
+              labelFor="checkbox-remember"
+              text="Lembrar minha senha"
+            />
+          </Form.Fieldset>
+          <Form.Button text="Entrar na conta" />
         </Form.Root>
       </MainContainer>
       <Footer />
