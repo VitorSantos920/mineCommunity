@@ -1,10 +1,10 @@
 import { ReactNode } from 'react';
 import { FieldsetContainer } from './style';
 
-interface FormFieldsetProps {
+interface FormFieldsetProps extends React.HTMLAttributes<HTMLElement> {
   children: ReactNode;
 }
 
-export function FormFieldset({ children }: FormFieldsetProps) {
-  return <FieldsetContainer>{children}</FieldsetContainer>;
+export function FormFieldset({ children, ...props }: FormFieldsetProps) {
+  return <FieldsetContainer {...props}>{children}</FieldsetContainer>;
 }
