@@ -27,7 +27,10 @@ export const stitches = createStitches({
     },
   },
 
-  media: {},
+  media: {
+    bp625: '(max-width: 625px)',
+    bp500: '(max-width: 500px)',
+  },
 });
 
 const injectGlobalStyles = stitches.globalCss({

@@ -7,9 +7,9 @@ export const MainContainer = styled('main', {
   background: 'rgba(38, 38, 38, 0.80)',
   border: '1px solid rgba(115, 115, 115, 0.50)',
   borderRadius: '.75rem',
-  margin: 'calc($defaultSpace * 2.5) auto',
+  margin: '10.3rem auto 4rem',
   maxWidth: 500,
-  padding: 'calc($defaultSpace * 2) 36px',
+  padding: 'calc($defaultSpace * 2) 2.25rem',
   textAlign: 'center',
 
   '> a': {
@@ -17,4 +17,6 @@ export const MainContainer = styled('main', {
 
     '&:hover': { textDecoration: 'underline' },
   },
+
+  '@bp500': { margin: '8.2rem 1rem 2.5rem' },
 });
