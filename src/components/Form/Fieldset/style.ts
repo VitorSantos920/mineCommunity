@@ -13,4 +13,10 @@ export const FieldsetContainer = styled('fieldset', {
 
     '& label, & input': { cursor: 'pointer' },
   },
+
+  '@bp320': {
+    '&.form__checkbox': {
+      justifyContent: 'center',
+    },
+  },
 });

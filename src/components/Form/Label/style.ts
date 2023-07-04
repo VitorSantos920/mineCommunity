@@ -5,5 +5,5 @@ const { styled } = stitches;
 export const LabelContainer = styled('label', {
   display: 'block',
   fontWeight: '$md',
-  textAlign: 'left',
+  textAlign: 'center',
 });
