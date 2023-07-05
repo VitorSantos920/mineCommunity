@@ -5,5 +5,7 @@ const { styled } = stitches;
 export const LabelContainer = styled('label', {
   display: 'block',
   fontWeight: '$md',
-  textAlign: 'center',
+  textAlign: 'left',
+
+  '&[for="checkbox-remember"]': { textAlign: 'center' },
 });
