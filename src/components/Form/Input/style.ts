@@ -15,7 +15,14 @@ export const InputContainer = styled('input', {
     width: '100%',
   },
 
-  '&, &::placeholder': { color: '#BAACAC' },
+  '&': {
+    '&:focus': {
+      borderColor: '$brandColor',
+    },
+    '&, &::placeholder': {
+      color: '#BAACAC',
+    },
+  },
 
   '&[type="checkbox"]': {
     appearance: 'none',
