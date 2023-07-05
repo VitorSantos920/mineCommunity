@@ -13,23 +13,29 @@ function App() {
           <Form.Fieldset className="form__email">
             <Form.Label labelFor="email" text="E-mail" />
             <Form.Input
-              inputType="email"
-              isRequired
-              inputInfo="email"
-              inputPlaceholder="vitordev@gmail.com"
+              type="email"
+              required
+              placeholder="vitordev@gmail.com"
+              name="email"
+              id="email"
             />
           </Form.Fieldset>
           <Form.Fieldset className="form__password">
             <Form.Label labelFor="password" text="Senha" />
             <Form.Input
-              inputType="password"
-              isRequired
-              inputInfo="password"
-              inputPlaceholder="***************"
+              type="password"
+              required
+              name="password"
+              id="password"
+              placeholder="***************"
             />
           </Form.Fieldset>
           <Form.Fieldset className="form__checkbox flex">
-            <Form.Input inputType="checkbox" inputInfo="checkbox-remember" />
+            <Form.Input
+              type="checkbox"
+              id="checkbox-remember"
+              name="checkbox-remember"
+            />
             <Form.Label
               labelFor="checkbox-remember"
               text="Lembrar minha senha"
