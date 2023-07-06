@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
 import { Form } from '../../components/Form';
 import { InputControlContainer } from './style';
+import { Title } from '../../styles/Title';
 
 export function Register() {
   return (
     <>
+      <Title>Cadastre-se</Title>
       <Form.Root>
         <InputControlContainer className="form__name-container flex">
           <Form.Fieldset className="form__firstname">
@@ -75,7 +77,10 @@ export function Register() {
             id="checkbox-remember"
             name="checkbox-remember"
           />
-          <Form.Label labelFor="checkbox-remember" text="Manter conectado" />
+          <Form.Label
+            labelFor="checkbox-remember"
+            text="Mantenha-me conectado"
+          />
         </Form.Fieldset>
         <Form.Button text="Realizar Cadastro" />
       </Form.Root>

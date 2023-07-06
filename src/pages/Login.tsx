@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import { Form } from '../components/Form';
+import { Title } from '../styles/Title';
 
 export function Login() {
   return (
     <>
+      <Title>Faça Login</Title>
       <Form.Root>
         <Form.Fieldset className="form__email">
           <Form.Label labelFor="email" text="E-mail" />
