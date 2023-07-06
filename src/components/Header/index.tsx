@@ -46,7 +46,10 @@ export function Header() {
         <ul className="header__menu-items flex">
           <X size={40} weight="bold" onClick={handleMenuVisibility} />
           <li className="header__item">
-            <Link to={location.pathname === '/register' ? '/' : '/register'}>
+            <Link
+              to={location.pathname === '/register' ? '/' : '/register'}
+              onClick={handleMenuVisibility}
+            >
               {location.pathname === '/register' ? 'Entrar' : 'Cadastrar'}
             </Link>
           </li>
