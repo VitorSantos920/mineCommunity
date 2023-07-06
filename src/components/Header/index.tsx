@@ -5,6 +5,10 @@ import { List, X } from '@phosphor-icons/react';
 export function Header() {
   const [visibility, setVisibility] = useState(false);
 
+  const handleMenuVisibility = () => {
+    setVisibility(!visibility);
+  };
+
   return (
     <HeaderContainer className="header flex">
       <div className="header__brand flex">
@@ -35,29 +39,35 @@ export function Header() {
 
       <nav className={`header__menu--mobile ${visibility && true}`}>
         <ul className="header__menu-items flex">
-          <X size={40} weight="bold" onClick={() => setVisibility(false)} />
+          <X size={40} weight="bold" onClick={handleMenuVisibility} />
           <li className="header__item">
-            <a href="#">Entrar</a>
+            <a href="#" onClick={handleMenuVisibility}>
+              Entrar
+            </a>
           </li>
           <li className="header__item">
-            <a href="#">Forum</a>
+            <a href="#" onClick={handleMenuVisibility}>
+              Forum
+            </a>
           </li>
           <li className="header__item">
-            <a href="#">Sobre</a>
+            <a href="#" onClick={handleMenuVisibility}>
+              Sobre
+            </a>
           </li>
           <li className="header__item">
-            <a href="#">Mojang</a>
+            <a href="#" onClick={handleMenuVisibility}>
+              Mojang
+            </a>
           </li>
           <li className="header__item">
-            <a href="#">Perguntas</a>
+            <a href="#" onClick={handleMenuVisibility}>
+              Perguntas
+            </a>
           </li>
         </ul>
       </nav>
-      <List
-        size={40}
-        weight="bold"
-        onClick={() => setVisibility(!visibility)}
-      />
+      <List size={40} weight="bold" onClick={handleMenuVisibility} />
     </HeaderContainer>
   );
 }
