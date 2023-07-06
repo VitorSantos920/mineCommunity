@@ -24,7 +24,7 @@ export function Header() {
         <ul className="header__menu-items flex">
           <li className="header__item">
             <Link to={location.pathname === '/register' ? '/' : '/register'}>
-              {location.pathname === '/register' ? 'Cadastrar' : 'Entrar'}
+              {location.pathname === '/register' ? 'Entrar' : 'Cadastrar'}
             </Link>
           </li>
           <li className="header__item">
@@ -46,9 +46,9 @@ export function Header() {
         <ul className="header__menu-items flex">
           <X size={40} weight="bold" onClick={handleMenuVisibility} />
           <li className="header__item">
-            <a href="#" onClick={handleMenuVisibility}>
-              Entrar
-            </a>
+            <Link to={location.pathname === '/register' ? '/' : '/register'}>
+              {location.pathname === '/register' ? 'Entrar' : 'Cadastrar'}
+            </Link>
           </li>
           <li className="header__item">
             <a href="#" onClick={handleMenuVisibility}>
