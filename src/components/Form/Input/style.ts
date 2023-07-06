@@ -10,7 +10,7 @@ export const InputContainer = styled('input', {
   outline: 'none',
   padding: '.9rem .875rem',
 
-  '&:not(input[type=checkbox])': {
+  '&:not(input[type=checkbox], [type=radio])': {
     marginTop: 'calc($defaultSpace * 0.5)',
     width: '100%',
   },
@@ -24,25 +24,45 @@ export const InputContainer = styled('input', {
     },
   },
 
-  '&[type="checkbox"]': {
+  '&[type=radio], &[type=checkbox]': {
     appearance: 'none',
-    height: 30,
-    backgroundColor: 'transparent',
-    border: '1px solid $inputBg',
     position: 'relative',
 
-    '&::before': {
-      backgroundColor: '$brandColor',
+    '&::before, &::before': {
       content: '',
-      height: 20,
-      left: '50%',
+      backgroundColor: '$brandColor',
       position: 'absolute',
+      left: '50%',
       top: '50%',
       transform: 'translate(-50%, -50%) scale(0)',
       transition: '100ms',
-      width: 20,
     },
 
-    '&:checked::before': { transform: 'translate(-50%, -50%) scale(1)' },
+    '&:checked::before': {
+      transform: 'translate(-50%, -50%) scale(1)',
+    },
+  },
+
+  '&[type=radio]': {
+    backdropFilter: 'none',
+    height: '1rem',
+    borderRadius: '50%',
+
+    '&::before': {
+      width: '1rem',
+      height: '1rem',
+      borderRadius: '50%',
+    },
+  },
+
+  '&[type="checkbox"]': {
+    height: '1.875rem',
+    backgroundColor: 'transparent',
+    border: '1px solid $inputBg',
+
+    '&::before': {
+      height: '1.25rem',
+      width: '1.25rem',
+    },
   },
 });
