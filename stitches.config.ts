@@ -50,9 +50,7 @@ const injectGlobalStyles = stitches.globalCss({
     color: '#fff',
   },
 
-  button: {
-    fontFamily: 'inherit ',
-  },
+  button: { fontFamily: 'inherit ' },
 
   a: {
     fontFamily: 'inherit',
@@ -60,12 +58,17 @@ const injectGlobalStyles = stitches.globalCss({
     textDecoration: 'none ',
   },
 
-  '.flex': {
-    display: 'flex',
-  },
+  '.flex': { display: 'flex' },
 
-  ul: {
-    listStyle: 'none',
+  ul: { listStyle: 'none' },
+
+  '::-webkit-scrollbar': { width: 10 },
+
+  '::-webkit-scrollbar-track': { background: '$inputBg' },
+
+  '::-webkit-scrollbar-thumb': {
+    background: '$brandColor',
+    borderRadius: '.75rem',
   },
 });
 
