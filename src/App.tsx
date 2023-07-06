@@ -44,6 +44,9 @@ function App() {
           <Form.Button text="Entrar na conta" />
         </Form.Root>
         <a href="#">Esqueceu a senha?</a>
+        <span>
+          Não possui uma conta? <a href="#">Crie uma</a>!
+        </span>
       </MainContainer>
       <Footer />
     </div>

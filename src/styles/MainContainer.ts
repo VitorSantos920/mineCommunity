@@ -12,10 +12,15 @@ export const MainContainer = styled('main', {
   padding: 'calc($defaultSpace * 2) 2.25rem',
   textAlign: 'center',
 
-  '> a': {
+  a: {
     color: '$brandColor',
 
     '&:hover': { textDecoration: 'underline' },
+  },
+
+  span: {
+    display: 'block',
+    marginTop: '.5rem',
   },
 
   '@bp500': { margin: '8.2rem 1rem 2.5rem' },
