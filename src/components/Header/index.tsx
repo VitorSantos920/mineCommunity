@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { HeaderContainer } from './style';
 import { List, X } from '@phosphor-icons/react';
+import { Link, useLocation } from 'react-router-dom';
 
 export function Header() {
   const [visibility, setVisibility] = useState(false);
@@ -8,6 +9,8 @@ export function Header() {
   const handleMenuVisibility = () => {
     setVisibility(!visibility);
   };
+
+  const location = useLocation();
 
   return (
     <HeaderContainer className="header flex">
@@ -20,7 +23,9 @@ export function Header() {
       <nav className="header__menu--desktop">
         <ul className="header__menu-items flex">
           <li className="header__item">
-            <a href="#">Entrar</a>
+            <Link to={location.pathname === '/register' ? '/' : '/register'}>
+              {location.pathname === '/register' ? 'Cadastrar' : 'Entrar'}
+            </Link>
           </li>
           <li className="header__item">
             <a href="#">Forum</a>
