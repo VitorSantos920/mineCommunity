@@ -1,5 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
-import { Default } from './layouts/default';
+import { Default } from './layouts/Default';
 import { Login } from './pages/Login';
 import { Register } from './pages/Register';
 
