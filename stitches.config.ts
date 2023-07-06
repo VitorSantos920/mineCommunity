@@ -30,7 +30,7 @@ export const stitches = createStitches({
   media: {
     bp625: '(max-width: 625px)',
     bp500: '(max-width: 500px)',
-    bp400: '(max-width: 400px)',
+    bp400: '(max-width: 445px)',
     bp320: '(max-width: 320px)',
   },
 });
