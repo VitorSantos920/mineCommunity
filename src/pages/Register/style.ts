@@ -10,5 +10,5 @@ export const InputControlContainer = styled('div', {
     alignItems: 'center',
   },
 
-  '@bp400': { flexDirection: 'column' },
+  '@bp445': { flexDirection: 'column' },
 });

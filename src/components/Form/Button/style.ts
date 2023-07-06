@@ -19,7 +19,7 @@ export const ButtonContainer = styled('button', {
 
   '&:hover': { textDecoration: 'underline' },
 
-  '@bp320': {
+  '@bp340': {
     '&': {
       fontSize: 'calc($defaultSize * .80)',
     },
