@@ -70,11 +70,24 @@ export function Register() {
 
         <InputControlContainer className="form__content-creator-container flex">
           <p>Você é criador de conteúdo?</p>
-          <Form.Fieldset className="form__content-creator flex">
-            <Form.Label labelFor="yes" text="Sim" />
-            <Form.Input type="radio" name="content-creator" id="yes" />
-            <Form.Label labelFor="no" text="Não" />
-            <Form.Input type="radio" name="content-creator" id="no" />
+          <Form.Fieldset className="form__content-creator">
+            <div className="flex">
+              <Form.Label labelFor="yes" text="Sim" />
+              <Form.Input
+                type="radio"
+                name="contentCreator"
+                value="yes"
+                id="yes"
+              />
+              <Form.Label labelFor="no" text="Não" />
+              <Form.Input
+                type="radio"
+                name="contentCreator"
+                value="no"
+                id="no"
+              />
+            </div>
+            <Form.ErrorMessage field="contentCreator" />
           </Form.Fieldset>
         </InputControlContainer>
 

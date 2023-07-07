@@ -16,9 +16,9 @@ export const FieldsetContainer = styled('fieldset', {
   },
 
   '&.form__content-creator': {
-    alignItems: 'center',
-    gap: '.75rem',
     marginBottom: 0,
+
+    div: { alignItems: 'center', gap: '.75rem', marginBottom: 0 },
   },
 
   '@bp320': {

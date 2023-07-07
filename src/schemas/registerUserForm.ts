@@ -13,6 +13,12 @@ export const registerUserFormSchema = z
       .nonempty('A senha é obrigatória')
       .min(6, { message: 'A senha deve ter no mínimo 6 caracteres' }),
     passwordRepeat: z.string().nonempty('A senha é obrigatória'),
+    contentCreator: z
+      .string()
+      .nullable()
+      .refine((value) => value === 'yes' || value === 'no', {
+        message: 'Selecione uma opção!',
+      }),
   })
   .refine((data) => data.password === data.passwordRepeat, {
     message: 'As senhas não coincidem!',
