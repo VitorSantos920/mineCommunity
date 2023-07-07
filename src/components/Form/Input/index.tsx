@@ -1,8 +1,13 @@
 import { InputHTMLAttributes } from 'react';
 import { InputContainer } from './style';
+import { useFormContext } from 'react-hook-form';
 
-type FormInputProps = InputHTMLAttributes<HTMLInputElement>;
+interface FormInputProps extends InputHTMLAttributes<HTMLInputElement> {
+  name: string;
+}
 
-export function FormInput({ ...props }: FormInputProps) {
-  return <InputContainer {...props} />;
+export function FormInput({ name, ...props }: FormInputProps) {
+  const { register } = useFormContext();
+
+  return <InputContainer {...props} {...register(name)} />;
 }
