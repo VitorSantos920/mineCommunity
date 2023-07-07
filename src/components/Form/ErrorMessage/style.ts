@@ -5,4 +5,5 @@ const { styled } = stitches;
 export const ErrorMessage = styled('span', {
   color: '$brandColor',
   fontWeight: '$exb',
+  fontSize: '.75rem',
 });
