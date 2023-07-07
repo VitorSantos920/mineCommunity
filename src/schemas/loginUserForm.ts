@@ -6,4 +6,5 @@ export const loginUserFormSchema = z.object({
     .nonempty('O e-mail é obrigatório!')
     .email('Formato de e-mail inválido!'),
   password: z.string().nonempty('A senha é obrigatória'),
+  rememberPassword: z.boolean().optional(),
 });

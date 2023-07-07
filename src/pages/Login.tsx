@@ -32,7 +32,7 @@ export function Login() {
           <Form.Input
             type="checkbox"
             id="checkbox-remember"
-            name="checkbox-remember"
+            name="rememberPassword"
           />
           <Form.Label labelFor="checkbox-remember" text="Lembrar minha senha" />
         </Form.Fieldset>
